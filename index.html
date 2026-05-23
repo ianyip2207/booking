@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Interiors — Award-winning luxury interior design studio offering residential, commercial, space planning, and renovation services." />
+  <meta name="keywords" content="interior design, luxury, residential, commercial, renovation, space planning, Kuala Lumpur" />
+  <meta property="og:title" content="Lumière Interiors — Designing Spaces That Inspire" />
+  <meta property="og:description" content="Bespoke luxury interior design for homes and businesses." />
+  <meta property="og:type" content="website" />
+  <title>Lumière Interiors — Designing Spaces That Inspire</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&q=80&auto=format&fit=crop" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">Lumière</a>
+
+      <nav class="navbar__links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <!-- Icon injected by JS -->
+        </button>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <span class="section-label section-label--light">Award-Winning Studio</span>
+      <h1 class="hero__title">Designing Spaces<br>That Inspire</h1>
+      <p class="hero__sub">We craft bespoke interiors that balance elegance, function, and personality — spaces you will never want to leave.</p>
+      <div class="hero__ctas">
+        <a href="#portfolio" class="btn">View Portfolio</a>
+        <a href="#contact" class="btn-outline">Get Free Consultation</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="services__intro reveal">
+        <span class="section-label">Who We Are</span>
+        <h2 id="services-heading">Crafting Environments<br>With Purpose</h2>
+        <p class="services__desc">Founded in 2010, Lumière Interiors has transformed over 500 spaces across residential and commercial sectors. Our multidisciplinary team combines design intuition with technical precision to deliver interiors that endure.</p>
+      </div>
+
+      <div class="services__grid">
+        <!-- Card 1 -->
+        <div class="service-card reveal" style="transition-delay: 0.05s">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12L12 3l9 9M5 10v10h5v-6h4v6h5V10"/>
+            </svg>
+          </div>
+          <h3>Residential Design</h3>
+          <p>Personalised living spaces tailored to your lifestyle, taste, and family's needs — from concept through to final styling.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="service-card reveal" style="transition-delay: 0.15s">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="1"/>
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+            </svg>
+          </div>
+          <h3>Commercial Interior</h3>
+          <p>Brand-aligned workplaces, retail environments, and hospitality spaces that perform as beautifully as they look.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="service-card reveal" style="transition-delay: 0.25s">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+          </div>
+          <h3>Space Planning</h3>
+          <p>Optimising flow, proportion, and functionality for any footprint or constraint — making every square foot count.</p>
+        </div>
+        <!-- Card 4 -->
+        <div class="service-card reveal" style="transition-delay: 0.35s">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3>Renovation Consultation</h3>
+          <p>Expert guidance for full or partial renovations — from initial brief and material selection to final handover.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats" aria-label="Company statistics">
+    <div class="container stats__grid">
+      <div class="stat-item reveal">
+        <div class="stat-item__number">
+          <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+        </div>
+        <p>Projects Completed</p>
+      </div>
+      <div class="stat-item reveal" style="transition-delay: 0.1s">
+        <div class="stat-item__number">
+          <span class="stat-number" data-target="15">0</span>
+        </div>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-item reveal" style="transition-delay: 0.2s">
+        <div class="stat-item__number">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+        </div>
+        <p>Client Satisfaction</p>
+      </div>
+      <div class="stat-item reveal" style="transition-delay: 0.3s">
+        <div class="stat-item__number">
+          <span class="stat-number" data-target="12">0</span>
+        </div>
+        <p>Design Awards</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO ===================== -->
+  <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Work</span>
+        <h2 id="portfolio-heading">Selected Projects</h2>
+      </div>
+
+      <div class="portfolio__filters reveal" role="group" aria-label="Filter portfolio by room type">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="living-room">Living Room</button>
+        <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+        <button class="filter-btn" data-filter="office">Office</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+        <!-- Living Room -->
+        <div class="portfolio-item" data-category="living-room">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80&auto=format&fit=crop" alt="Modern living room with beige sofa and warm lighting" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>The Laurent Residence</h3>
+            <span>Living Room</span>
+            <button class="portfolio-item__expand" aria-label="View The Laurent Residence">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="living-room">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80&auto=format&fit=crop" alt="Luxury lounge with contemporary furniture" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Maison Blanc</h3>
+            <span>Living Room</span>
+            <button class="portfolio-item__expand" aria-label="View Maison Blanc">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="living-room">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80&auto=format&fit=crop" alt="Contemporary living room with high ceilings" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Atelier Heights</h3>
+            <span>Living Room</span>
+            <button class="portfolio-item__expand" aria-label="View Atelier Heights">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bedroom -->
+        <div class="portfolio-item" data-category="bedroom">
+          <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80&auto=format&fit=crop" alt="Minimal bedroom with neutral tones" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Serenity Suite</h3>
+            <span>Bedroom</span>
+            <button class="portfolio-item__expand" aria-label="View Serenity Suite">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="bedroom">
+          <img src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=600&q=80&auto=format&fit=crop" alt="Warm toned bedroom with wooden accents" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>The Amber Room</h3>
+            <span>Bedroom</span>
+            <button class="portfolio-item__expand" aria-label="View The Amber Room">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="bedroom">
+          <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80&auto=format&fit=crop" alt="Hotel-style master suite design" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Grand Suite KL</h3>
+            <span>Bedroom</span>
+            <button class="portfolio-item__expand" aria-label="View Grand Suite KL">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Office -->
+        <div class="portfolio-item" data-category="office">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format&fit=crop" alt="Modern open-plan office interior" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Vertex HQ</h3>
+            <span>Office</span>
+            <button class="portfolio-item__expand" aria-label="View Vertex HQ">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="office">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80&auto=format&fit=crop" alt="Executive workspace with designer furniture" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Director's Den</h3>
+            <span>Office</span>
+            <button class="portfolio-item__expand" aria-label="View Director's Den">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="office">
+          <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80&auto=format&fit=crop" alt="Stylish home office setup" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Studio Lumière</h3>
+            <span>Office</span>
+            <button class="portfolio-item__expand" aria-label="View Studio Lumière">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="portfolio-item" data-category="kitchen">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80&auto=format&fit=crop" alt="Modern kitchen with island and dark cabinetry" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Noir Kitchen</h3>
+            <span>Kitchen</span>
+            <button class="portfolio-item__expand" aria-label="View Noir Kitchen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="kitchen">
+          <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600&q=80&auto=format&fit=crop" alt="Bright white kitchen with marble countertops" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Marble & Light</h3>
+            <span>Kitchen</span>
+            <button class="portfolio-item__expand" aria-label="View Marble and Light">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="kitchen">
+          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80&auto=format&fit=crop" alt="Luxury dark kitchen with designer appliances" loading="lazy" />
+          <div class="portfolio-item__overlay">
+            <h3>Obsidian Kitchen</h3>
+            <span>Kitchen</span>
+            <button class="portfolio-item__expand" aria-label="View Obsidian Kitchen">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Client Stories</span>
+        <h2 id="testimonials-heading">What Our Clients Say</h2>
+      </div>
+
+      <div class="carousel" id="carousel">
+        <div class="carousel__track" id="carouselTrack">
+
+          <div class="carousel__slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>"Lumière transformed our apartment into a true sanctuary. Every detail was considered — from the material palette to the lighting plan. The result exceeded every expectation. Truly exceptional work."</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Sarah L." loading="lazy" />
+                <div>
+                  <strong>Sarah L.</strong>
+                  <span>Homeowner, Kuala Lumpur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>"Our new office has completely changed how our team works and how clients perceive us. Lumière understood the brand immediately and delivered a space that speaks for itself."</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Marcus T." loading="lazy" />
+                <div>
+                  <strong>Marcus T.</strong>
+                  <span>CEO, Vertex Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>"From the very first consultation, I knew Lumière was different. They listened deeply, challenged our assumptions constructively, and delivered a kitchen I still cannot believe is mine."</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="Priya N." loading="lazy" />
+                <div>
+                  <strong>Priya N.</strong>
+                  <span>Homeowner, Bangsar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel__slide">
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>"The renovation consultation service was invaluable. We avoided costly mistakes and stayed on budget. The space planning expertise alone was worth every ringgit. Highly recommended."</blockquote>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&q=80&auto=format&fit=crop&crop=face" alt="James W." loading="lazy" />
+                <div>
+                  <strong>James W.</strong>
+                  <span>Property Investor, Mont Kiara</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel__controls">
+          <button class="carousel__btn" id="prevBtn" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          </button>
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Testimonial slides"></div>
+          <button class="carousel__btn" id="nextBtn" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT FORM ===================== -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="container contact__inner">
+
+      <div class="contact__info reveal">
+        <span class="section-label">Let's Talk</span>
+        <h2 id="contact-heading">Start Your<br>Dream Space</h2>
+        <p>Share your vision with us and receive a complimentary consultation within 24 hours. We would love to hear about your project.</p>
+        <ul class="contact__details" aria-label="Contact information">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </span>
+            <span>+60 12-345 6789</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <span>hello@lumiereinteriors.com</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <span>Level 18, Menara ABC,<br>Kuala Lumpur 50450</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" novalidate aria-label="Enquiry form" style="transition-delay: 0.15s">
+        <!-- Honeypot — hidden from real users, catches bots -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <div class="form-group">
+          <label for="name">Full Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required minlength="2" autocomplete="name" />
+          <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+60 12-345 6789" autocomplete="tel" />
+          <span class="form-error" id="phoneError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your space, project timeline, and any specific requirements..." required minlength="10"></textarea>
+          <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="btn btn--submit" id="submitBtn">
+          <span class="btn__text">Send Message</span>
+          <span class="btn__spinner" hidden aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spin"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </span>
+        </button>
+
+        <div class="form-notification" id="formNotification" role="alert" aria-live="polite" hidden>
+          <span class="form-notification__icon" aria-hidden="true"></span>
+          <span class="form-notification__msg"></span>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">Lumière</a>
+        <p>Designing spaces that inspire since 2010. Kuala Lumpur's premier luxury interior design studio.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" aria-label="Instagram" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Pinterest" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contact">
+        <h4>Get In Touch</h4>
+        <address>
+          <p>+60 12-345 6789</p>
+          <p>hello@lumiereinteriors.com</p>
+          <p>Level 18, Menara ABC,<br>Kuala Lumpur 50450</p>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Lumière Interiors. All rights reserved.</p>
+        <a href="#home" class="footer__back-top" aria-label="Back to top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img src="" alt="" id="lightboxImg" />
+      <p class="lightbox__caption" id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+  <div class="lightbox__backdrop" id="lightboxBackdrop" hidden aria-hidden="true"></div>
+
+  <!-- ===================== FLOATING ELEMENTS ===================== -->
+  <a href="https://wa.me/60123456789" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <button class="back-to-top-fab" id="backToTopFab" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
