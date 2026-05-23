@@ -572,7 +572,7 @@ h1, h2, h3, h4 {
 
 .portfolio-item__overlay h3 {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-white);
   margin-bottom: 0.25rem;
 }
@@ -957,13 +957,14 @@ h1, h2, h3, h4 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--color-warm-gray);
-  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
 }
 
 .footer__social a:hover {
   background: var(--color-accent);
   border-color: var(--color-accent);
   color: var(--color-white);
+  transform: scale(1.35);
 }
 
 .footer__links h4,

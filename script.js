@@ -288,6 +288,12 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.querySelector('.btn__spinner').hidden = !isLoading;
     }
 
+    function speakVoiceAlert(text) {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+    }
+
     contactForm.addEventListener('submit', async e => {
       e.preventDefault();
 
@@ -320,6 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
           contactForm.querySelectorAll('.is-error').forEach(el => el.classList.remove('is-error'));
           contactForm.querySelectorAll('.form-error').forEach(el => el.textContent = '');
           showNotification('success', 'Thank you! Your message has been received. We will be in touch within 24 hours.');
+          speakVoiceAlert('Hurray. Your voice is heard!');
         } else {
           throw new Error(`Server responded with status ${response.status}`);
         }
