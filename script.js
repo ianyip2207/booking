@@ -320,7 +320,9 @@ document.addEventListener('DOMContentLoaded', () => {
           body: JSON.stringify(payload),
         });
 
-        if (response.ok) {
+        const data = await response.json();
+
+        if (response.ok && String(data.success) === 'true') {
           contactForm.reset();
           // Clear any lingering error states
           contactForm.querySelectorAll('.is-error').forEach(el => el.classList.remove('is-error'));
@@ -328,11 +330,15 @@ document.addEventListener('DOMContentLoaded', () => {
           showNotification('success', 'Thank you! Your message has been received. We will be in touch within 24 hours.');
           speakVoiceAlert('Hurray. Your voice is heard!');
         } else {
-          throw new Error(`Server responded with status ${response.status}`);
+          throw new Error(data.message || `Server responded with status ${response.status}`);
         }
       } catch (err) {
         console.error('Form submission error:', err);
-        showNotification('error', 'Something went wrong. Please try again or reach us directly at hello@lumiereinteriors.com.');
+        const isActivation = err.message && /activat/i.test(err.message);
+        const msg = isActivation
+          ? 'Almost there! A confirmation email was sent to the site owner — submissions will be live once it is activated.'
+          : 'Something went wrong. Please try again or reach us directly at hello@lumiereinteriors.com.';
+        showNotification('error', msg);
       } finally {
         setLoading(false);
       }
