@@ -5,6 +5,16 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* =========================================================
+     SHARED UTILITY — VOICE ALERT
+     ========================================================= */
+  function speakVoiceAlert(text) {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+  }
+
+
+  /* =========================================================
      MODULE 1 — NAVBAR
      ========================================================= */
   const navbar    = document.getElementById('navbar');
@@ -288,12 +298,6 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.querySelector('.btn__spinner').hidden = !isLoading;
     }
 
-    function speakVoiceAlert(text) {
-      if (!window.speechSynthesis) return;
-      window.speechSynthesis.cancel();
-      window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
-    }
-
     contactForm.addEventListener('submit', async e => {
       e.preventDefault();
 
@@ -543,5 +547,16 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: targetY, behavior: 'smooth' });
     });
   });
+
+
+  /* =========================================================
+     MODULE 10 — SOCIAL ICON CLICK HOOKS
+     ========================================================= */
+  const facebookIcon = document.querySelector('a[aria-label="Facebook"]');
+  if (facebookIcon) {
+    facebookIcon.addEventListener('click', () => {
+      speakVoiceAlert('Hurray. Your voice is heard!');
+    });
+  }
 
 }); // end DOMContentLoaded
