@@ -1,5 +1,5 @@
-/* ============================================================
-   Lumière Interiors — script.js
+﻿/* ============================================================
+   Ally Interiors — script.js
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isActivation = err.message && /activat/i.test(err.message);
         const msg = isActivation
           ? 'Almost there! A confirmation email was sent to the site owner — submissions will be live once it is activated.'
-          : 'Something went wrong. Please try again or reach us directly at hello@lumiereinteriors.com.';
+          : 'Something went wrong. Please try again or reach us directly at hello@Allyinteriors.com.';
         showNotification('error', msg);
       } finally {
         setLoading(false);
@@ -462,7 +462,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Load saved preference, fall back to OS preference
-  const savedTheme = localStorage.getItem('lumiere-theme') ||
+  const savedTheme = localStorage.getItem('Ally-theme') ||
     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
   htmlEl.setAttribute('data-theme', savedTheme);
@@ -473,7 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const current = htmlEl.getAttribute('data-theme');
       const next    = current === 'dark' ? 'light' : 'dark';
       htmlEl.setAttribute('data-theme', next);
-      localStorage.setItem('lumiere-theme', next);
+      localStorage.setItem('Ally-theme', next);
       updateToggleIcon(next);
     });
   }

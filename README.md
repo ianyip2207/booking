@@ -1,10 +1,10 @@
-# Lumière Interiors
+﻿# Ally Interiors
 
 A static one-page landing site for a luxury interior design studio.
 
 **Live site:** https://ianyip2207.github.io/booking/
 
-![Lumière Interiors](assets/screenshot.png)
+![Ally Interiors](assets/screenshot.png)
 
 ## Features
 
